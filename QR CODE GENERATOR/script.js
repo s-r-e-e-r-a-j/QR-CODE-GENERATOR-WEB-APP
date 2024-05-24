@@ -1,4 +1,4 @@
-
+//coded by sreeraj
 		
 const a=document.querySelector(".D-Link");
 const image=document.querySelector(".image");
@@ -11,7 +11,7 @@ let content=input.value;
 image.src=`https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${content}`
 //click the qr image to download
  
-//download section   //coded by sreeraj
+//download section   
 var api=` https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${content}`;
 
 fetch(api).then((response)=>response.blob()).then((data)=>{
