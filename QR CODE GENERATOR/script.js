@@ -13,7 +13,7 @@ image.src=`https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${conte
  
 //download section   
 var api=` https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${content}`;
-
+ //blob =binary large object
 fetch(api).then((response)=>response.blob()).then((data)=>{
 	console.log(data)
   let url=URL.createObjectURL(data);
