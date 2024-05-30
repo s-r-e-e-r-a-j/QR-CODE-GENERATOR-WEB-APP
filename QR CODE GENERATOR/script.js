@@ -1,4 +1,4 @@
-//coded by sreeraj
+  //coded by sreeraj
 		
 const a=document.querySelector(".D-Link");
 const image=document.querySelector(".image");
