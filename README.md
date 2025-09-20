@@ -1,7 +1,8 @@
 
 
+<img width="1103" height="766" alt="Screenshot 2025-09-20 170724" src="https://github.com/user-attachments/assets/d75e8164-dbf3-4262-9e61-068d51000956">
 
-![Screenshot 2024-05-26 162907](https://github.com/C0DEGamer/QR-CODE-GENERATOR-WEB-APP/assets/154326486/fbeccb41-305c-4cfe-bd8c-23de77fb840c)
+
 
 QR Code Generator Made With HTML CSS And JAVASCRIPT
 
