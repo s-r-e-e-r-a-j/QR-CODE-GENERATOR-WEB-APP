@@ -1,69 +1,99 @@
-
-		
-.main{
-	width:100%;
-	height:100vh;
-	background: linear-gradient(90deg,rgba(45,56,78,0.567),rgba(21,67,23,0.567));
-	display:flex;
-	align-items:center;
-	justify-content: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
- .img-container{
- 	width:50%;
- 	height:60%;
- 	background:linear-gradient(90deg,rgba(45,56,78,0.567),rgba(21,67,23,0.567));
- 	border-radius:20px;
- 	border:10px solid black;
- 	position:relative;
- }
 
-  .G-btn{
-  	padding:15px 40px;
-  	background-color:cyan;
-  	box-shadow:0 0 10em white;
-  	position:absolute;
-  	top:380px;
-  	left:280px;
-  	border-radius: 10px;
-  	font-size:1rem;
-  	cursor:pointer;
-  	cursor:pointer;
-  	transition:1s;
+body {
+  background: linear-gradient(90deg, rgba(45,56,78,0.567), rgba(21,67,23,0.567));
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* prevents content touching edges on small screens */
+}
 
-  }
-  .G-btn:active{
-  	background-color:red;
+.img-container {
+  width: 100%;
+  max-width: 800px; /* larger on desktop */
+  background: linear-gradient(90deg, rgba(45,56,78,0.567), rgba(21,67,23,0.567));
+  border-radius: 20px;
+  border: 6px solid black;
+  padding: 30px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  color: gray;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.input {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin-bottom: 20px;
+  caret-color: red;
+  color: red;
+}
+
+.generate-btn {
+  padding: 12px 30px;
+  background-color: cyan;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.generate-btn:active {
+  background-color: red;
+  color: white;
+}
+
+.qr-image {
+  width: 220px;
+  height: 220px;
+  margin: 20px 0;
+  border: 5px solid black;
+  border-radius: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+/* Smartphones */
+@media (max-width: 600px) {
+  .img-container {
+    padding: 20px 15px;
   }
 
-  .image{
-  	width:220px;
-  	height:220px;
-  	position:absolute;
-  	left:240px;
-  	top:140px;
-  	border:5px solid black;
-  	border-radius:20px;
-  	cursor:pointer;
-  	display:none;
-  	
-  }
-  .input{
-  	padding:10px 200px;
-  	font-size:1rem;
-  	caret-color: red;
-  	color:red;
-  	position:absolute;
-  	border-radius:10px;
-  	left:70px;
-  	top:80px;
-  	outline:none;
-  	border:none;
+  .heading {
+    font-size: 1.4rem;
   }
 
-  .heading{
-  	position:absolute;
-  	left:220px;
-  	color: gray;
+  .qr-image {
+    width: 180px;
+    height: 180px;
   }
 
-	
+  .input {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .generate-btn {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+}
